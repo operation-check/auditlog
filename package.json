@@ -1,0 +1,49 @@
+{
+  "name": "ghec-audit-log-cli",
+  "version": "2.1.2",
+  "description": "Audit Log CLI for Rest and GraphQL APIs",
+  "main": "ghec-audit-log-cli.js",
+  "scripts": {
+    "start": "node ghec-audit-log-cli",
+    "lint": "./node_modules/.bin/standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/droidpl/ghec-audit-log-cli.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "GitHub Professional Services",
+    "email": "services@github.com",
+    "url": "https://services.github.com"
+  },
+  "contributors": [
+    {
+      "name": "Javier de Pedro López",
+      "email": "droidpl@github.com",
+      "url": "https://github.com/droidpl"
+    },
+    {
+      "name": "Froilán Irizarry Rivera",
+      "email": "froi@github.com",
+      "url": "https://github.com/froi"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/plugin-enterprise-cloud": "^5.0.4",
+    "@octokit/plugin-retry": "*",
+    "@octokit/plugin-throttling": "^3.3.1",
+    "@octokit/rest": "^18.3.1",
+    "commander": "^5.1.0",
+    "json-hash": "^1.2.0",
+    "validate.js": "^0.13.1",
+    "yaml": "^1.9.2"
+  },
+  "bin": {
+    "ghec-audit-log-cli": "./ghec-audit-log-cli.js"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}

@@ -1,0 +1,6 @@
+payload={
+      username: webhook
+    , channel: @sshojiro
+    , text: see more detail about `webhook` in http://qiita.com/rubytomato@github/items/6558bfdb37d982891c09#incoming-webhooks \n this message is sent via `curl`
+    , icon_emoji: :ghost:
+}
