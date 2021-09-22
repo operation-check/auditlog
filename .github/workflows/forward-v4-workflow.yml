@@ -8,7 +8,7 @@ name: POLL/POST Audit Log Data from V4 API
 ##############################################
 on:
   push:
-    branches: Auditlog-test
+    branches: master
   schedule:
     - cron: '00 15 * * 0'
 
