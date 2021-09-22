@@ -56,7 +56,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: .net-app
-        path: ${{env.DOTNET_ROOT}}/myapp
+        #path: ${{env.DOTNET_ROOT}}/myapp
 
         #curl -X POST -H "Content-Type: application/json" -d @audit-log-output.json ${{secrets.WEBHOOK_URL}}
         #curl -X POST -H "Content-Type: application/json" -d '{"text":"Webhook test"}' ${{secrets.WEBHOOK_URL}}
