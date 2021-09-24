@@ -3,7 +3,7 @@ const { allEntriesQuery } = require('./ghec-audit-log-queries')
 
 async function requestV4Entries (octokit, org, limit, cursor) {
 console.log(` start proccess async function requestV4Entries (octokit, org, limit, cursor) `)
-  let entries = []
+/*  let entries = []
   const variables = {
     org: org,
     page: null
@@ -23,7 +23,7 @@ console.log(` async while loop start `)
 console.log(` dataset `)
     if (cursor != null) {
 console.log(` if (cursor != null) `)
-//      const index = newEntries.findIndex((elem) => elem.id === cursor)
+      const index = newEntries.findIndex((elem) => elem.id === cursor)
       if (index !== -1) {
 console.log(` if (index !== -1) `)
         newEntries = newEntries.slice(0, index)
@@ -54,6 +54,7 @@ console.log(` if (!firstPageCursorId && newEntries.length !== 0) {} `)
 console.log(` if (!firstPageCursorId && newEntries.length == 0) {} `)
   }
   return { data: entries, newestCursorId: firstPageCursorId }
+*/
 }
 
 // In this case we are not using the cursors from the header Link as identifies the page and the last element, but wouldn't
