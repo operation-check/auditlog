@@ -46,10 +46,10 @@ jobs:
         fi
         if [ -z "$LAST_CURSOR" ]; then
           echo "FIRST TIME RUNNING AUDIT LOG POLL"
-        #  npm start -- --token ${{secrets.AUDIT_LOG_TOKEN}} --org ${{secrets.ORG_NAME}} --file 'audit-log-output.json'
+          npm start -- --token ${{secrets.AUDIT_LOG_TOKEN}} --org ${{secrets.ORG_NAME}} --file 'audit-log-output.json'
         else
           echo "RUNNING AUDIT LOG POLL FROM $LAST_CURSOR"
-        #  npm start -- --token ${{secrets.AUDIT_LOG_TOKEN}} --org ${{secrets.ORG_NAME}} --cursor $LAST_CURSOR --file 'audit-log-output.json'
+          npm start -- --token ${{secrets.AUDIT_LOG_TOKEN}} --org ${{secrets.ORG_NAME}} --cursor $LAST_CURSOR --file 'audit-log-output.json'
         fi
 
         #curl -X POST -H "Content-Type: application/json" -d @audit-log-output.json ${{secrets.WEBHOOK_URL}}
