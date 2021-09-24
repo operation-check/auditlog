@@ -54,7 +54,6 @@ console.log(` if (!firstPageCursorId && newEntries.length !== 0) {} `)
 console.log(` if (!firstPageCursorId && newEntries.length == 0) {} `)
   }
   return { data: entries, newestCursorId: firstPageCursorId }
-*/
 }
 
 // In this case we are not using the cursors from the header Link as identifies the page and the last element, but wouldn't
@@ -129,3 +128,4 @@ module.exports = {
   requestV4Entries,
   requestV3Entries
 }
+*/
