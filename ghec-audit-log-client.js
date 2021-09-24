@@ -9,10 +9,10 @@ console.log(` start proccess async function requestV4Entries (octokit, org, limi
     page: null
   }
   console.log(variables)
-/*
-  let hasNextPage = true
+
+//  let hasNextPage = true
   let firstPageCursorId = null
-  let foundCursor = false
+/*  let foundCursor = false
   const hasLimit = limit || false
   let limitReached = false
 
@@ -54,8 +54,8 @@ console.log(` if (!firstPageCursorId && newEntries.length !== 0) {} `)
     }
 console.log(` if (!firstPageCursorId && newEntries.length == 0) {} `)
   }
-  return { data: entries, newestCursorId: firstPageCursorId }
 */
+  return { data: entries, newestCursorId: firstPageCursorId }
 }
 
 // In this case we are not using the cursors from the header Link as identifies the page and the last element, but wouldn't
