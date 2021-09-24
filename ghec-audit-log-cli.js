@@ -91,8 +91,8 @@ console.log(` proccess v3 `)
   if (!queryRunner) return []
 
   // Run the query and store the most recent cursor
-  //const { data, newestCursorId } = await queryRunner()
-  //const entries = data
+  const { data, newestCursorId } = await queryRunner()
+  const entries = data
   //if (newestCursorId) {
     const cursorFileName = `.last${api === 'v3' ? '-v3-' : '-'}cursor-update`
 //    fs.writeFileSync(cursorFileName, newestCursorId)
