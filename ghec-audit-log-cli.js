@@ -95,7 +95,8 @@ console.log(` proccess v3 `)
   //const entries = data
   //if (newestCursorId) {
     const cursorFileName = `.last${api === 'v3' ? '-v3-' : '-'}cursor-update`
-    fs.writeFileSync(cursorFileName, newestCursorId)
+//    fs.writeFileSync(cursorFileName, newestCursorId)
+    fs.writeFileSync(cursorFileName, cursorFileName)
 console.log(` proccess point 92line writeFileSync `)
   //}
 
