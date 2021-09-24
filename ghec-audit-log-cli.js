@@ -114,8 +114,8 @@ console.log(` proccess else `)
 */
 console.log(` proccess queryAuditLog()　befor `)
 queryAuditLog()
-console.log(` proccess queryAuditLog()　after `)
   .then((data) => {
+console.log(` proccess queryAuditLog()　after `)
     if (outputFile) {
 console.log(` proccess if (outputFile) `)
       fs.writeFileSync(outputFile, data)
