@@ -9,13 +9,13 @@ console.log(` start proccess async function requestV4Entries (octokit, org, limi
     page: null
   }
   console.log(variables)
-
+/*
   let hasNextPage = true
   let firstPageCursorId = null
   let foundCursor = false
   const hasLimit = limit || false
   let limitReached = false
-/*
+
 console.log(` async while loop start `)
   while (hasNextPage && !foundCursor && !limitReached) {
     const data = await octokit.graphql(allEntriesQuery, variables)
