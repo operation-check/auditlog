@@ -20,9 +20,12 @@ console.log(` async while loop start `)
     const data = await octokit.graphql(allEntriesQuery, variables)
     let newEntries = data.organization.auditLog.nodes
     // Cursor check
+console.log(` dataset `)
     if (cursor != null) {
+console.log(` if (cursor != null) `)
       const index = newEntries.findIndex((elem) => elem.id === cursor)
       if (index !== -1) {
+console.log(` if (index !== -1) `)
         newEntries = newEntries.slice(0, index)
         foundCursor = true
       }
