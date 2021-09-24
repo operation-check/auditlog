@@ -3,7 +3,7 @@ const { allEntriesQuery } = require('./ghec-audit-log-queries')
 
 async function requestV4Entries (octokit, org, limit, cursor) {
 console.log(` start proccess async function requestV4Entries (octokit, org, limit, cursor) `)
-/*  let entries = []
+  let entries = []
   const variables = {
     org: org,
     page: null
@@ -15,6 +15,7 @@ console.log(` start proccess async function requestV4Entries (octokit, org, limi
   let foundCursor = false
   const hasLimit = limit || false
   let limitReached = false
+/*
 console.log(` async while loop start `)
   while (hasNextPage && !foundCursor && !limitReached) {
     const data = await octokit.graphql(allEntriesQuery, variables)
@@ -54,6 +55,7 @@ console.log(` if (!firstPageCursorId && newEntries.length !== 0) {} `)
 console.log(` if (!firstPageCursorId && newEntries.length == 0) {} `)
   }
   return { data: entries, newestCursorId: firstPageCursorId }
+*/
 }
 
 // In this case we are not using the cursors from the header Link as identifies the page and the last element, but wouldn't
@@ -128,4 +130,3 @@ module.exports = {
   requestV4Entries,
   requestV3Entries
 }
-*/
