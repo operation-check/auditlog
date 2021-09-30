@@ -55,8 +55,6 @@ jobs:
         #curl -X POST -H "Content-Type: application/json" -d @audit-log-output.json ${{secrets.WEBHOOK_URL}}
         # 仮で出力する.json形式のファイル（Teamsではファイル形式がそもそも受けられないはず）
         curl -X POST -H "Content-Type: application/json" -d @test.json ${{secrets.WEBHOOK_URL2}}
-        #curl -X POST -H https://blobstoragetest00.blob.core.windows.net/blob-test?sp=racwdl&st=2021-09-30T07:23:43Z&se=2021-09-30T15:23:43Z&spr=https&sv=2020-08-04&sr=c&sig=Kqf5e09nIAW4LuSZR6MphELBK%2BB0xsUut9Jq5kDLcqg%3D "Content-Type: application/json" -d @test.json
-
         # ただのtextであれば受けれることのp確認のみ。
         # azure blob strage では逆に（ファイルではないから）エラーとなる可能性あり。
         #curl -X POST -H "Content-Type: application/json" -d '{"text":"Webhook test"}' ${{secrets.WEBHOOK_URL}}
